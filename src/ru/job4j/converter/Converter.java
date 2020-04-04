@@ -25,7 +25,7 @@ public class Converter {
         float rsl = value * 60;
         return rsl;
     }
-    public static void main (String [] arsg){
+    public static void main (String [] args){
         int euro = Converter.rubleToEuro(140);
         int dollar = Converter.rubleToDollar(300);
         float euroF = Converter.rubleToEuroF(150);
