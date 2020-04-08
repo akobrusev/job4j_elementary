@@ -40,11 +40,5 @@ public class ConverterTest {
         Assert.assertEquals(expected, out);
     }
 
-    @Test
-    public void dollarToRuble() {
-    }
 
-    @Test
-    public void dollarToRubleF() {
-    }
 }
