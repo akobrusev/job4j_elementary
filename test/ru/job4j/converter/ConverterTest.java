@@ -42,10 +42,10 @@ public class ConverterTest {
 
     @Test
     public void whenConvert2DlrThen150Ruble() {
-        int in = 2;
+        float in = 2.5f;
         int expected = 150;
-        int out = Converter.dollarToRuble(in);
-        Assert.assertEquals(expected, out);
+        float out = Converter.dollarToRubleF(in);
+        Assert.assertEquals(expected, out, 1.01);
     }
 
 
