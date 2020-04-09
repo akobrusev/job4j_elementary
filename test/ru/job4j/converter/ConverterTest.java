@@ -40,5 +40,13 @@ public class ConverterTest {
         Assert.assertEquals(expected, out);
     }
 
+    @Test
+    public void whenConvert2DlrThen150Ruble() {
+        int in = 2;
+        int expected = 150;
+        int out = Converter.dollarToRuble(in);
+        Assert.assertEquals(expected, out);
+    }
+
 
 }
