@@ -1,6 +1,16 @@
+/**
+ * Converter.
+ *
+ * @author Anton Kobrusev (akobrusev@gmail.com)
+ */
 package ru.job4j.converter;
 
 public class Converter {
+
+    /**
+     * @param value водные данные? колличество валюты
+     * @return возврат результата, деление валюты на курс.
+     */
     public static int rubleToEuro(int value) {
         int rsl = value / 70;
         return rsl;
@@ -27,6 +37,15 @@ public class Converter {
         return rsl;
     }
     @SuppressWarnings("checkstyle:WhitespaceAround")
+    /**
+     * Main.
+     * @param args - Converter.rubleToEuro - конвертация рублей в евро.
+     * @param args - Converter.rubleToDollar - конвертация рублей в доллары.
+     * @param args - Converter.rubleToEuroF - конвертация рублей в евро с остатком.
+     * @param args - Converter.euroToRuble - конвертация евро в рубли.
+     * @param args - Converter.dollarToRuble - конвертация долларов в рубли.
+     * @param args - Converter.dollarToRubleF - конвертация долларов с остатком в рубли .
+     */
     public static void main(String [] args) {
         int euro = Converter.rubleToEuro(140);
         int dollar = Converter.rubleToDollar(300);
