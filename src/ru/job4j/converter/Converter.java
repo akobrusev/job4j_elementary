@@ -1,14 +1,14 @@
+package ru.job4j.converter;
+
 /**
  * Converter.
  *
  * @author Anton Kobrusev (akobrusev@gmail.com)
  */
-package ru.job4j.converter;
-
 public class Converter {
 
     /**
-     * @param value водные данные? колличество валюты
+     * @param value водные данные, колличество валюты
      * @return возврат результата, деление валюты на курс.
      */
     public static int rubleToEuro(int value) {
