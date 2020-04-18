@@ -7,7 +7,6 @@ package ru.job4j.array;
                 if (data[0] != data[data.length - index - 1]) {
                 result = false;
                 break;
-
                 }
             }
             return result;
