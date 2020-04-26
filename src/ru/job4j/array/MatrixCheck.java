@@ -22,6 +22,7 @@ public class MatrixCheck {
         }
         return result;
     }
+
     public static char[] extractDiagonal(char[][] board) {
         char[] rsl = new char[board.length];
         for (int i = 0; i < board.length; i++) {
@@ -34,11 +35,14 @@ public class MatrixCheck {
         boolean result = false;
         for (int i = 0; i < board.length; i++) {
             if (board[i][i] == 'X') {
-                result = true;
-                break;
+                if (monoHorizontal(board, i) || monoVertical(board, i)) {
+                    result = true;
+                    break;
+                }
             }
         }
         return result;
     }
 }
+
 
