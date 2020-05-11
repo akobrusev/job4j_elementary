@@ -9,7 +9,5 @@ public class Fitness {
             month += 1;
         }
         return month;
-
     }
-
 }

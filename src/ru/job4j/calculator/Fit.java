@@ -6,20 +6,22 @@ public class Fit {
         return rsl;
     }
 
-
     public static double womanWeight(double height) {
         double rsl = 1.15 * (height - 110);
         return rsl;
     }
+
     public static double girlWeight(double height) {
         double rsl = 1.15 * (height - 110);
         return rsl;
     }
+
     public static double boyWeight(double height) {
         double rsl = 1.15 * (height - 100);
         return rsl;
     }
-    public static void main (String[] args) {
+
+    public static void main(String[] args) {
         double man = Fit.manWeight(188);
         double woman = Fit.womanWeight(175);
         double girl = Fit.girlWeight(145);

@@ -9,7 +9,6 @@ public class Mortgage {
             n = (n - salary) + (n - salary) * p;
             year += 1;
         }
-
         return year;
     }
 }

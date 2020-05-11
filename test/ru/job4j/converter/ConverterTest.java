@@ -2,8 +2,7 @@ package ru.job4j.converter;
 
 import org.junit.Assert;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
+import ru.job4j.loop.Converter;
 
 public class ConverterTest {
 

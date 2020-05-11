@@ -15,6 +15,7 @@ public class SqAreaTest {
         double out = 2;
         Assert.assertEquals(expected, out, 0.01);
     }
+
     @Test
     public void whensquare4thenp6() {
         int inp = 10;

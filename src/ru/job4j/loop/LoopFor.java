@@ -8,6 +8,5 @@ public class LoopFor {
         for (int index = 1; index <= 5; index++) {
             System.out.println(index);
         }
-
     }
 }

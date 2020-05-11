@@ -1,4 +1,4 @@
-package ru.job4j.converter;
+package ru.job4j.loop;
 /**
  * Класс для конвертации рубли/евро и рубли/доллар
  * @author Anton Kobrusev (akobrusev@gmail.com)
@@ -11,7 +11,7 @@ public class Converter {
      * @return возврат результата, (деление рублей на курс, получаем Евро)
      */
     public static int rubleToEuro(int value) {
-        int rsl = value / 70; // формула перевода рублей в евро
+        int rsl = value / 70;
         return rsl;
     }
     /**
@@ -20,7 +20,7 @@ public class Converter {
      * @return возврат результата, (деление рублей на курс, получаем Доллар)
      */
     public static int rubleToDollar(int value) {
-        int rsl = value / 60; // формула перевода рублей в доллар
+        int rsl = value / 60;
         return rsl;
     }
     /**
@@ -29,7 +29,7 @@ public class Converter {
      * @return возврат результата, (деление рублей на курс, получаем Евро)
      */
     public static float rubleToEuroF(float value) {
-        float rsl = value / 70; // формула перевода рублей в евро
+        float rsl = value / 70;
         return rsl;
     }
     /**
@@ -38,7 +38,7 @@ public class Converter {
      * @return возврат результата, (умножение евро на курс, получаем Рубли)
      */
     public static int euroToRuble(int value) {
-        int rsl = value * 70; // формула перевода евро в рубли
+        int rsl = value * 70;
         return rsl;
     }
     /**
@@ -47,7 +47,7 @@ public class Converter {
      * @return возврат результата, умножение рублй на курс, получаем Рубли
      */
     public static int dollarToRuble(int value) {
-        int rsl = value * 60; // формула превода доллар в рубли
+        int rsl = value * 60;
         return rsl;
     }
 
@@ -65,42 +65,42 @@ public class Converter {
      * @param args - Converter.dollarToRubleF - конвертация долларов  в рубли с остатком.
      */
     public static void main(String [] args) {
-        int euro = Converter.rubleToEuro(140); // конвертация рублей в евро.
-        int dollar = Converter.rubleToDollar(300); // конвертация рублей в доллары.
-        float euroF = Converter.rubleToEuroF(150); // конвертация рублей в евро с остатком (плавающая запятая).
-        int rublesE = Converter.euroToRuble(5); // конвертация евро в рубли.
-        int rublesD = Converter.dollarToRuble(6); // конвертация долларов в рубли.
-        float rublesF = Converter.dollarToRubleF(2.5f); // конвертация долларов в рубли с остатком (плавающая запятая).
-        System.out.println("140 rubles are " + euro + " euro. "); // вывод результата
-        System.out.println("300 rubles are " + dollar + " dollar. "); // вывод результата
-        System.out.println("150 rubles are " + euroF + " euro. "); // вывод результата
-        System.out.println("5 euro are " + rublesE + " rubles. "); // вывод результата
-        System.out.println("6 dollar are " + rublesD + " rubles. "); // вывод результата
-        System.out.println("2.5 dollar are " + rublesF + " rubles. "); // вывод результата
+        int euro = Converter.rubleToEuro(140);
+        int dollar = Converter.rubleToDollar(300);
+        float euroF = Converter.rubleToEuroF(150);
+        int rublesE = Converter.euroToRuble(5);
+        int rublesD = Converter.dollarToRuble(6);
+        float rublesF = Converter.dollarToRubleF(2.5f);
+        System.out.println("140 rubles are " + euro + " euro. ");
+        System.out.println("300 rubles are " + dollar + " dollar. ");
+        System.out.println("150 rubles are " + euroF + " euro. ");
+        System.out.println("5 euro are " + rublesE + " rubles. ");
+        System.out.println("6 dollar are " + rublesD + " rubles. ");
+        System.out.println("2.5 dollar are " + rublesF + " rubles. ");
         int in = 140;
         int expected = 2;
         int out = rubleToEuro(in);
         boolean passed = expected == out;
-        System.out.println("140 rubles are 2 euro. Test result : " + passed); // вывод проверки результата
+        System.out.println("140 rubles are 2 euro. Test result : " + passed);
         in = 300;
         expected = 5;
         out = rubleToDollar(in);
         passed = expected == out;
-        System.out.println("300 rubles are 5 dollar. Test result : " + passed); // вывод проверки результата
+        System.out.println("300 rubles are 5 dollar. Test result : " + passed);
         in = 150;
         expected = 2;
         out = rubleToEuro(in);
         passed = expected == out;
-        System.out.println("150 rubles are 2 euro. Test result : " + passed); // вывод проверки результата
+        System.out.println("150 rubles are 2 euro. Test result : " + passed);
         in = 5;
         expected = 350;
         out = euroToRuble(in);
         passed = expected == out;
-        System.out.println("5 euro are 350 rubles. Test result : " + passed); // вывод проверки результата
+        System.out.println("5 euro are 350 rubles. Test result : " + passed);
         in = 6;
         expected = 360;
         out = dollarToRuble(in);
         passed = expected == out;
-        System.out.println("6 dollar are 360 rubles. Test result : " + passed); // вывод проверки результата
+        System.out.println("6 dollar are 360 rubles. Test result : " + passed);
     }
 }

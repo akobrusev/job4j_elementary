@@ -5,6 +5,7 @@ import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
 public class MatrixTest {
+
     @Test
     public void when2on2() {
         Matrix matrix = new Matrix();
@@ -15,6 +16,7 @@ public class MatrixTest {
         };
         assertThat(table, is(expect));
     }
+
     @Test
     public void when4on4() {
         Matrix matrix = new Matrix();
@@ -27,6 +29,7 @@ public class MatrixTest {
         };
         assertThat(table, is(expect));
     }
+
     @Test
     public void when6on6() {
         Matrix matrix = new Matrix();
