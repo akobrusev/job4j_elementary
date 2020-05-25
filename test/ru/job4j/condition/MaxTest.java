@@ -8,19 +8,19 @@ public class MaxTest {
 
     @Test
     public void whenMax1To2Then2() {
-        int result = Max.max(1, 2);
-        assertThat(result, is(2));
+        int result = Max.max(1, 2, 3);
+        assertThat(result, is(3));
     }
 
     @Test
     public void whenMax2To1Then1() {
-        int result = Max.max(5, 3);
+        int result = Max.max(5, 3, 4);
         assertThat(result, is(5));
     }
 
     @Test
     public void whenMax6To6Then6() {
-        int result = Max.max(6, 6);
-        assertThat(result, is(6));
+        int result = Max.max(6, 6,8);
+        assertThat(result, is(8));
     }
 }
