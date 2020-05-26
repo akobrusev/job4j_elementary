@@ -8,8 +8,8 @@ public class MaxTest {
 
     @Test
     public void whenMax1To2Then2() {
-        int result = Max.max(1, 2, 3);
-        assertThat(result, is(3));
+        int result = Max.max(1, 2);
+        assertThat(result, is(2));
     }
 
     @Test
@@ -19,8 +19,8 @@ public class MaxTest {
     }
 
     @Test
-    public void whenMax6To6Then6() {
-        int result = Max.max(6, 6,8);
-        assertThat(result, is(8));
+    public void whenMax6To6Then8When10() {
+        int result = Max.max(6, 6,8,10);
+        assertThat(result, is(10));
     }
 }
