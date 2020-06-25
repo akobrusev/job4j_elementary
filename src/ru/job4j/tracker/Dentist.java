@@ -6,6 +6,7 @@ public class Dentist extends Doctor {
     public String getDrill() {
         return drill;
     }
+
     public static void main(String[] args) {
         Dentist dentist = new Dentist();
     }
