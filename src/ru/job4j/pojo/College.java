@@ -8,7 +8,7 @@ public class College {
     public static void main(String[] args) {
         Student student = new Student();
         student.setName("Anton");
-        student.setSirname("Kobrusev ");
+        student.setSirname("Kobrusev");
         student.setGroup("GGU2003");
         student.setDateOfReceipt(new Date(2003, 07, 17));
 
